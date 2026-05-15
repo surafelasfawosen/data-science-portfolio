@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surafel Asfawosen - CV</title>
+  <!-- Import Computer Modern Font to mimic LaTeX exactly -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css">
+  <style>
+    :root {
+      --text-color: #000000;
+    }
+    body {
+      font-family: 'Computer Modern Serif', 'Times New Roman', serif;
+      color: #000000;
+      line-height: 1.4;
+      margin: 0;
+      padding: 0;
+      background: #e5e7eb; 
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .page {
+      max-width: 8.5in; 
+      margin: 2rem auto;
+      background: #ffffff;
+      padding: 0.8in 1in; 
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      font-size: 13pt; /* Increased from 11pt */
+      color: #000000; /* Ensuring pure black */
+    }
+    header {
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
+    h1 {
+      font-size: 28pt; /* Increased */
+      font-weight: bold; /* Make header more solid */
+      margin: 0 0 0.3rem 0;
+      letter-spacing: 1px;
+      color: #000000;
+    }
+    .contact-info {
+      font-size: 12pt; /* Increased */
+      color: #000000;
+      font-weight: 500;
+    }
+    .contact-info a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    section {
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      font-size: 15pt; /* Increased */
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0 0 0.5rem 0;
+      border-bottom: 1.5px solid #000000; /* Thicker line */
+      padding-bottom: 3px;
+      color: #000000;
+    }
+    .entry {
+      margin-bottom: 1rem;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .entry-title {
+      font-weight: bold;
+      color: #000000;
+      font-size: 13pt;
+    }
+    .entry-org {
+      font-style: italic;
+      color: #000000;
+      font-size: 13pt;
+    }
+    .entry-date {
+      white-space: nowrap;
+      font-weight: 500;
+      color: #000000;
+    }
+    ul {
+      margin: 0.4rem 0 0 0;
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.3rem;
+      text-align: justify;
+      color: #000000;
+      font-weight: 500; /* Make text slightly thicker so it doesn't look gray */
+    }
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.3rem;
+    }
+    .skills-table td {
+      padding: 0.2rem 0;
+      vertical-align: top;
+      color: #000000;
+      font-weight: 500;
+    }
+    .skills-category {
+      font-weight: bold;
+      width: 25%;
+    }
+    .summary-text {
+      text-align: justify;
+      margin: 0.5rem 0;
+      font-weight: 500;
+      color: #000000;
+    }
+    
+    /* Print optimizations */
+    .print-btn {
+      display: block;
+      width: 220px;
+      margin: 2rem auto;
+      padding: 12px;
+      background: #1e293b;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      font-family: sans-serif;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+      font-weight: bold;
+    }
+    .print-btn:hover {
+      background: #0f172a;
+    }
+    @media print {
+      body { background: #fff; }
+      .page {
+        margin: 0;
+        padding: 0.5in;
+        box-shadow: none;
+        max-width: 100%;
+      }
+      .print-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+
+  <div class="page">
+    <header>
+      <h1>Surafel Asfawosen</h1>
+      <div class="contact-info">
+        surafelasfawwosen@gmail.com &nbsp;|&nbsp; 
+        0963807081 &nbsp;|&nbsp; 
+        <a href="https://linkedin.com/in/surafel-asfawosen">linkedin.com/in/surafel-asfawosen</a> &nbsp;|&nbsp; 
+        <a href="https://github.com/surafelasfawosen">github.com/surafelasfawosen</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary-text">
+        Data Scientist pursuing a B.Sc. at Debre Berhan University (Expected 2026), specializing in advanced machine learning, robust data pipelines, and interactive data visualization. Adept at translating complex datasets into actionable insights for financial analytics and high-impact public health sectors (aligned with EPHI objectives). Strong foundation in statistical modeling, deep learning architectures, and big data processing.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title-org">
+            <span class="entry-title">B.Sc. in Data Science</span>, 
+            <span class="entry-org">Debre Berhan University</span>
+          </div>
+          <div class="entry-date">Expected Graduation: 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title-org">
+            <span class="entry-title">Data Scientist Intern</span>, 
+            <span class="entry-org">Commercial Bank of Ethiopia (CBE)</span>
+          </div>
+          <div class="entry-date">Present</div>
+        </div>
+        <ul>
+          <li>Developed and deployed a comprehensive Power BI dashboard to monitor banking transactions and analyze customer behavioral trends across branches.</li>
+          <li>Engineered data cleaning workflows and selected key performance indicators (KPIs) to create dynamic visual reports enabling high-level strategic analysis.</li>
+          <li>Evaluated ATM performance utilizing unsupervised Clustering models based on transaction frequency and volume to dynamically optimize maintenance and cash-loading schedules.</li>
+          <li>Conducted sentiment analysis on customer feedback datasets extracted from Facebook and the Google Play Store to derive product improvement insights.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title-org">
+            <span class="entry-title">Public Health Data Analyst</span>, 
+            <span class="entry-org">Academic & Independent Research (EPHI Aligned)</span>
+          </div>
+          <div class="entry-date">2023 &ndash; 2024</div>
+        </div>
+        <ul>
+          <li>Designed an interactive Power BI dashboard analyzing global Tuberculosis (TB) trends (1990&ndash;2013) with a 2024 forecasting update.</li>
+          <li>Implemented rigorous data cleaning pipelines and applied imputation strategies (mean/mode algorithms) to accurately address missing values in complex global health datasets.</li>
+          <li>Constructed dynamic KPIs and predictive 10-year forecasting models to significantly support health resource planning and strategic storytelling.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Projects</h2>
+      
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title-org">
+            <span class="entry-title">Ethiopia Soil Erosion Predictor AI</span>
+          </div>
+        </div>
+        <ul>
+          <li>Developed a state-of-the-art AI topological research project leveraging Semi-Supervised Graph Convolutional Networks (GCN) to accurately predict and map soil erosion vulnerability across the Ethiopian Highlands.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title-org">
+            <span class="entry-title">Advanced ETL Pipeline (PySpark & DuckDB)</span>
+          </div>
+        </div>
+        <ul>
+          <li>Built a highly scalable extraction and transformation pipeline utilizing PySpark, integrated seamlessly with DuckDB to perform lightning-fast in‑process analytics on diverse data sources.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title-org">
+            <span class="entry-title">BART Intent Chatbot</span>
+          </div>
+        </div>
+        <ul>
+          <li>Engineered an intelligent, intent-aware conversational AI system using the BART transformer architecture, deployed via a Gradio interface for responsive and seamless user interactions.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title-org">
+            <span class="entry-title">Global Terrorism ML Analysis</span>
+          </div>
+        </div>
+        <ul>
+          <li>Applied advanced Machine Learning algorithms on the Global Terrorism Database (GTD) incorporating deep feature engineering, predictive modeling, and SARIMA time-series forecasting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills & Technologies</h2>
+      <table class="skills-table">
+        <tr>
+          <td class="skills-category">Programming:</td>
+          <td>Python, R, SQL, JavaScript, HTML/CSS</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Data Science & AI:</td>
+          <td>Machine Learning, Deep Learning (GCN), NLP, Transformers, Predictive Modeling</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Data Engineering:</td>
+          <td>PySpark, DuckDB, ETL Pipelines, Data Preprocessing</td>
+        </tr>
+        <tr>
+          <td class="skills-category">Analytics & Viz:</td>
+          <td>Power BI, Data Visualization, Dashboard Development, Statistical Analysis</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Supervised Machine Learning: Regression and Classification &ndash; <em>Coursera</em></li>
+        <li>Intro to Artificial Intelligence &ndash; <em>Udacity</em></li>
+        <li>Data Analysis Fundamentals &ndash; <em>Udacity</em></li>
+        <li>Android Developer Basics &ndash; <em>Udacity</em></li>
+        <li>Programming Fundamentals &ndash; <em>Udacity</em></li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+</html>
