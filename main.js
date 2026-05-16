@@ -32,4 +32,47 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.addEventListener('DOMContentLoaded', () => {
   const fadeElements = document.querySelectorAll('.fade-in');
   fadeElements.forEach(el => observer.observe(el));
+
+  // Lightbox Logic
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImg');
+  const closeBtn = document.getElementById('closeModal');
+  const triggers = document.querySelectorAll('.lightbox-trigger');
+
+  if (modal && modalImg && closeBtn) {
+    triggers.forEach(img => {
+      img.addEventListener('click', function() {
+        modal.classList.add('active');
+        modalImg.src = this.src;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('active');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+      }
+    });
+  }
+
+  // Hamburger Menu Logic
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    const links = document.querySelectorAll('.nav-links a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  }
 });
